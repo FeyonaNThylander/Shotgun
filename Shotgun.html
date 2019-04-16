@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Styles/Shotgun.css" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Ultra|Reenie+Beanie" rel="stylesheet">     
+    <script src="JSFiles/ShotgunGame.js" defer></script> 
+
+    <title>* S H O T G U N *</title>
+</head>
+<body>
+    
+        <h1 class="title">* S H O T G U N *</h1>
+        <br><br>
+        <div class="player1"><p class="myTitle">MY MOVE</p><br>
+            <p id="playerInfo1"></p><br>
+            <p id="myBulletCount"></p>
+        </div>
+
+        <div class="player2"><p class="compTitle">COMPUTERS MOVE</p><br>
+            <p id="playerInfo2"></p><br>
+            <p id="compBulletCount"></p> 
+        </div>
+    
+
+    <button id="btnLoad" onclick="newGame.Load_Button()">RELOAD GUN</button>
+    <button id="btnBlock" onclick="newGame.Block_Button()">BLOCK</button>
+    <button id="btnShoot" onclick="newGame.Shoot_Button()">SHOOT</button>
+    <button id="btnShotgun" onclick="newGame.Shotgun_Button()">*SHOTGUN*</button>
+  
+<!-- The Modal -->
+<div id="myModal" class="modal">        
+          <div class="modal-content">
+            <p>Let's play another round, are you up for it?</p>
+        <button class="yesButton"><span class="YES">YES</span></button>
+        <button class="noButton"><span class="NO" onclick= "window.location.href = 'Endpage.html';">NO</span></button>
+        <br>
+          </div>
+        
+        </div> 
+
+
+</body>
+</html>
+
+
